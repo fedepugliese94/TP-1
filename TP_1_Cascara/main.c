@@ -54,8 +54,15 @@ int main()
                 printf("La resta es: %.2f \n", resta);
                 break;
             case 5:
-                division=resultadoD(numero1,numero2);
-                printf("El resultado de: %.2f \n", division);
+                if (numero2 == 0)
+                    {
+                        printf("No se puede dividir por 0(cero), por favor cambiar de numero. \n");
+                    }
+                else
+                    {
+                        division=resultadoD(numero1,numero2);
+                        printf("El resultado de: %.2f \n", division);
+                    }
                 break;
             case 6:
                 multiplicacion=resultadoM(numero1,numero2);
