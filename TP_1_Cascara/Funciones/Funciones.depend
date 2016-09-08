@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1473374218 source:c:\users\federico\desktop\repositorios\tpcalcu\tp_1_cascara\funciones\functions.c
+	<stdio.h>
+	<stdlib.h>
+	"functions.h"
+
+1473373843 c:\users\federico\desktop\repositorios\tpcalcu\tp_1_cascara\funciones\functions.h
+
+1446667744 source:c:\users\federico\desktop\repositorios\tpcalcu\tp_1_cascara\funciones\main.c
+	<stdio.h>
+	<stdlib.h>
+
