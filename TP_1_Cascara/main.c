@@ -39,35 +39,48 @@ int main()
                 printf("Introducir el primer numero: \n");
                 scanf("%f", &numero1);
                 x= numero1;
-
+                system("pause");
+                system("cls");
                 break;
             case 2:
                 printf("Introducir el segundo numero: \n");
                 scanf("%f", &numero2);
                 y = numero2;
+                system("pause");
+                system("cls");
                 break;
             case 3:
                 suma=resultadoS(numero1,numero2);
                 printf("La suma es: %.2f \n", suma);
+                system("pause");
+                system("cls");
                 break;
             case 4:
                 resta=resultadoR(numero1,numero2);
                 printf("La resta es: %.2f \n", resta);
+                system("pause");
+                system("cls");
                 break;
             case 5:
                 if (numero2 == 0)
                     {
                         printf("No se puede dividir por 0(cero), por favor cambiar de numero. \n");
+                        scanf("%f", &numero2);
+                        y = numero2;
                     }
-                else
-                    {
-                        division=resultadoD(numero1,numero2);
-                        printf("El resultado de: %.2f \n", division);
-                    }
+                    else
+                        {
+                            division=resultadoD(numero1,numero2);
+                            printf("El resultado de: %.2f \n", division);
+                            system("pause");
+                            system("cls");
+                        }
                 break;
             case 6:
                 multiplicacion=resultadoM(numero1,numero2);
                 printf("El resultado es: %.2f \n", multiplicacion);
+                system("pause");
+                system("cls");
                 break;
             case 7:
                 printf("Aviso: El factoreo se realizara solo con el numero uno.\n");
@@ -77,11 +90,15 @@ int main()
                         printf("Volver a introducir numero: ");
                         scanf("%f", &numero1);
                         x= numero1;
+                        system("pause");
+                        system("cls");
                     }
                     else
                         {
                             resultadoFac=factorial(numero1);
                             printf("El resultado es: %d \n",resultadoFac);
+                            system("pause");
+                            system("cls");
 
                         }
 
@@ -92,6 +109,8 @@ int main()
                 division=resultadoD(numero1, numero2);
                 multiplicacion=resultadoM(numero1, numero2);
                 printf("Los resultados: \n suma %.2f \n resta %.2f \n division %.2f \n multiplicacion %.2f \n", suma, resta, division, multiplicacion);
+                system("pause");
+                system("cls");
                 break;
             case 9:
                 seguir = 'n';
