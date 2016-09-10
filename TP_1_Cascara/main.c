@@ -36,12 +36,13 @@ int main()
         switch(opcion)
         {
             case 1:
-
+                printf("Introducir el primer numero: \n");
                 scanf("%f", &numero1);
                 x= numero1;
 
                 break;
             case 2:
+                printf("Introducir el segundo numero: \n");
                 scanf("%f", &numero2);
                 y = numero2;
                 break;
@@ -70,17 +71,27 @@ int main()
                 break;
             case 7:
                 printf("Aviso: El factoreo se realizara solo con el numero uno.\n");
-                printf("Aviso: Se retiraran los decimales en el calculo.\n");
-                resultadoFac=factorial(numero1);
-                printf("El resultado es: %d \n",resultadoFac);
+                if(numero1<=0)
+                    {
+                        printf("Imposible factorear numeros menores o iguales a 0 (cero). \n");
+                        printf("Volver a introducir numero: ");
+                        scanf("%f", &numero1);
+                        x= numero1;
+                    }
+                    else
+                        {
+                            resultadoFac=factorial(numero1);
+                            printf("El resultado es: %d \n",resultadoFac);
+
+                        }
 
                 break;
             case 8:
                 suma=resultadoS(numero1, numero2);
-                resta=numero1-numero2;
-                division=numero1/numero2;
-                multiplicacion=numero1*numero2;
-                printf("Los resultados en ese orden son: %.2f, %.2f, %.2f, %.2f \n", suma, resta, division, multiplicacion);
+                resta=resultadoR(numero1, numero2);
+                division=resultadoD(numero1, numero2);
+                multiplicacion=resultadoM(numero1, numero2);
+                printf("Los resultados: \n suma %.2f \n resta %.2f \n division %.2f \n multiplicacion %.2f \n", suma, resta, division, multiplicacion);
                 break;
             case 9:
                 seguir = 'n';
