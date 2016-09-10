@@ -67,6 +67,8 @@ int main()
                         printf("No se puede dividir por 0(cero), por favor cambiar de numero. \n");
                         scanf("%f", &numero2);
                         y = numero2;
+                        system("pause");
+                        system("cls");
                     }
                     else
                         {
